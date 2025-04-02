@@ -14,7 +14,7 @@ def getenv(var): return os.environ.get(var) or DATA.get(var, None)
 bot_token = getenv("TOKEN") 
 api_hash = getenv("HASH") 
 api_id = getenv("ID")
-delay = int(getenv("DELAY"))
+delay = getenv("DELAY")
 bot = Client("mybot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 ss = getenv("STRING")
